@@ -151,7 +151,7 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
     characters = [story_input.character1, story_input.character2]
     speaker_index = 0
 
-    for _ in range(100):
+    for _ in range(10):
         # Predict the label based on the last generated text (current_script)
         # Use only the last generated text with its label
         if main_body:
@@ -253,39 +253,3 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
     )
     return result
 
-# -------------------------------------------------------------
-# 6. Instructions to Run
-# -------------------------------------------------------------
-"""
-1. Install dependencies:
-   pip install fastapi uvicorn pydantic requests torch transformers
-
-2. Ensure you have the files:
-   - apitofunc.py (contains generate_initial_scene, generate_scene, generate_dialogue, generate_ending_scene)
-   - label_prediction_model.py (contains LabelPredictionModel class)
-   - endpoints.py (this file)
-
-3. Update the 'model_path' in this file to point to your actual RobertaForSequenceClassification model.
-
-4. Launch the server:
-   uvicorn endpoints:app --reload
-
-5. Send a POST request to http://127.0.0.1:8000/generate_complete_story with JSON body:
-
-   {
-     "setting": "a haunted castle on a stormy night",
-     "character1": { "name": "Alice", "trait": "a curious traveler" },
-     "character2": { "name": "Marcus", "trait": "a stoic guardian" }
-   }
-
-6. You should receive a JSON response containing:
-   {
-     "initial_scene": "...",
-     "main_body": [
-       {"label": "Scene", "text": "..."},
-       {"label": "Character", "text": "..."},
-       ...
-     ],
-     "ending_scene": "..."
-   }
-"""

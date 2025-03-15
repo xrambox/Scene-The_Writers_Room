@@ -43,35 +43,48 @@ Modify the `model_path` variable in `endpoints.py` to point to your actual `Robe
 
 ### 5. Start the Server
 
-Run the following command in terminal-1 to launch the FastAPI server:
+Run the following command to launch the FastAPI server:
 
 ```bash
 uvicorn endpoints:app --reload
 ```
 
-### 6. Test the API
+### 6. Instructions to Run
 
-#### Option 1: Using cURL or Postman
+1. Install dependencies:
 
-Send a POST request to `http://127.0.0.1:8000/generate_complete_story` with the following JSON body:
+   ```bash
+   pip install fastapi uvicorn pydantic requests torch transformers
+   ```
 
-```json
-{
-  "setting": "a haunted castle on a stormy night",
-  "character1": { "name": "Alice", "trait": "a curious traveler" },
-  "character2": { "name": "Marcus", "trait": "a stoic guardian" }
-}
-```
+2. Ensure you have the necessary files:
 
-#### Option 2: Running `test.py`
+   - **apitofunc.py** (contains `generate_initial_scene`, `generate_scene`, `generate_dialogue`, `generate_ending_scene`)
+   - **label_prediction_model.py** (contains `LabelPredictionModel` class)
+   - **endpoints.py** (this file)
 
-1. Open a new terminal (Terminal 2).
-2. Ensure the virtual environment is activated.
-3. Run the test script:
+3. Update the `'model_path'` in `endpoints.py` to point to your actual `RobertaForSequenceClassification` model.
 
-```bash
-python test.py
-```
+4. Launch the server in one terminal:
+
+   ```bash
+   uvicorn endpoints:app --reload
+   ```
+
+5. Open another terminal and run the test script:
+
+   ```bash
+   python test.py
+   ```
+
+6. Alternatively, you can manually send a POST request to `http://127.0.0.1:8000/generate_complete_story` with the following JSON body:
+   ```json
+   {
+     "setting": "a haunted castle on a stormy night",
+     "character1": { "name": "Alice", "trait": "a curious traveler" },
+     "character2": { "name": "Marcus", "trait": "a stoic guardian" }
+   }
+   ```
 
 ### 7. Expected JSON Response
 
