@@ -1,4 +1,4 @@
-# Story Generation API
+# SCENE- The Writers Room
 
 ## Setup Instructions
 
