@@ -114,3 +114,9 @@ The API will return a structured JSON response:
   deactivate  # macOS/Linux
   venv\Scripts\deactivate  # Windows
   ```
+- There are 2 directories for trained roberta model:
+  ```bash
+  trained_roberta_dialogue_model_old: trained on 100 movie data, source: Supervisors provided github link
+  trained_roberta_dialogue_model_new: trained on 718 movie data, source: Sumukh and Bhavani
+  ```
+  
