@@ -119,4 +119,12 @@ The API will return a structured JSON response:
   trained_roberta_dialogue_model_old: trained on 100 movie data, source: Supervisors provided github link
   trained_roberta_dialogue_model_new: trained on 718 movie data, source: Sumukh and Bhavani
   ```
+
+## ToDo Work
+
+Christine to update character module
+Add ending scene heading: Christine/Furqan work
+If wanted, add a character based main body calling
+Label and Descriptions can be yielded along the process if required by Katy and Bharath
+Host on server: Basic code example or complete implementation?
   
