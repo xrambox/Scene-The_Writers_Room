@@ -10,8 +10,18 @@ API_URL = "http://127.0.0.1:8000/generate_complete_story"
 
 # Define the test input data with more than two characters
 test_input = {
-    "setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex and Sohaib."
+    "setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex.",
+    "characters": [
+        {"name": "Alice", "trait": "a curious traveler"},
+        {"name": "Marcus", "trait": "a stoic guardian"},
+        {"name": "Eleanor", "trait": "a ghostly noblewoman"},
+        {"name": "Victor", "trait": "a mad scientist"},
+        {"name": "Finn", "trait": "a lost child seeking answers"}
+    ]
 }
+
+# Input without characters
+# test_input = {"setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex and Sohaib."}
 
 def validate_response(response_json):
     """
