@@ -10,14 +10,7 @@ API_URL = "http://127.0.0.1:8000/generate_complete_story"
 
 # Define the test input data with more than two characters
 test_input = {
-    "setting": "a haunted castle on a stormy night",
-    "characters": [
-        {"name": "Alice", "trait": "a curious traveler"},
-        {"name": "Marcus", "trait": "a stoic guardian"},
-        {"name": "Eleanor", "trait": "a ghostly noblewoman"},
-        {"name": "Victor", "trait": "a mad scientist"},
-        {"name": "Finn", "trait": "a lost child seeking answers"}
-    ]
+    "setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex and Sohaib."
 }
 
 def validate_response(response_json):
@@ -26,7 +19,8 @@ def validate_response(response_json):
     """
     try:
         # Check if all required keys exist
-        assert "initial_scene" in response_json, "Missing initial_scene"
+        assert "initial_scene_heading" in response_json, "Missing initial_scene_heading"
+        assert "initial_scene_description" in response_json, "Missing initial_scene_description"
         assert "main_body" in response_json, "Missing main_body"
         assert "ending_scene" in response_json, "Missing ending_scene"
         
@@ -34,13 +28,15 @@ def validate_response(response_json):
         assert isinstance(response_json["main_body"], list), "Main body should be a list"
         
         # Validate each story part
+        valid_labels = ["Scene_Heading", "Narrative", "Character_Name", "Dialogue"]
         for part in response_json["main_body"]:
             assert "label" in part, "Missing label in story part"
             assert "text" in part, "Missing text in story part"
-            assert part["label"] in ["Scene", "Character", "Dialogue"], "Invalid label"
+            assert part["label"] in valid_labels, f"Invalid label: {part['label']}"
         
         # Check text lengths
-        assert len(response_json["initial_scene"]) > 0, "Initial scene is empty"
+        assert len(response_json["initial_scene_heading"]) > 0, "Initial scene heading is empty"
+        assert len(response_json["initial_scene_description"]) > 0, "Initial scene description is empty"
         assert len(response_json["ending_scene"]) > 0, "Ending scene is empty"
         
         return True
@@ -76,7 +72,8 @@ def test_generate_complete_story():
             print(json.dumps(response_json, indent=4))
             
             # Additional detailed logging
-            logger.info(f"Initial Scene Length: {len(response_json['initial_scene'])} characters")
+            logger.info(f"Initial Scene Heading Length: {len(response_json['initial_scene_heading'])} characters")
+            logger.info(f"Initial Scene Description Length: {len(response_json['initial_scene_description'])} characters")
             logger.info(f"Main Body Segments: {len(response_json['main_body'])}")
             logger.info(f"Ending Scene Length: {len(response_json['ending_scene'])} characters")
             
