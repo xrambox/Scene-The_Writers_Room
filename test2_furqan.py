@@ -6,11 +6,11 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_URL = "http://127.0.0.1:8000/generate_complete_story"
+API_URL = "https://19f3-2a0a-a543-4d09-0-4c57-70fd-7cc3-4f92.ngrok-free.app/generate_complete_story"
 
 # Define the test input data with more than two characters
 test_input = {
-    "setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex.",
+    "setting": "a haunted castle on a dark night. There were 2 friends. Alice and Alex.",
     "characters": [
         {"name": "Alice", "trait": "a curious traveler"},
         {"name": "Marcus", "trait": "a stoic guardian"},
@@ -20,8 +20,9 @@ test_input = {
     ]
 }
 
-# Input without characters
-# test_input = {"setting": "a haunted castle on a romantic night. There were 2 lovers. Alice and Alex and Sohaib."}
+
+# 2nd type of input
+# test_input = {"setting": "a haunted castle on a dark night. There were 2 friends. Alice and Alex."}
 
 def validate_response(response_json):
     """
@@ -32,7 +33,8 @@ def validate_response(response_json):
         assert "initial_scene_heading" in response_json, "Missing initial_scene_heading"
         assert "initial_scene_description" in response_json, "Missing initial_scene_description"
         assert "main_body" in response_json, "Missing main_body"
-        assert "ending_scene" in response_json, "Missing ending_scene"
+        assert "ending_scene_heading" in response_json, "Missing ending_scene_heading"
+        assert "ending_scene_description" in response_json, "Missing ending_scene_description"
         
         # Check main_body structure
         assert isinstance(response_json["main_body"], list), "Main body should be a list"
@@ -47,7 +49,8 @@ def validate_response(response_json):
         # Check text lengths
         assert len(response_json["initial_scene_heading"]) > 0, "Initial scene heading is empty"
         assert len(response_json["initial_scene_description"]) > 0, "Initial scene description is empty"
-        assert len(response_json["ending_scene"]) > 0, "Ending scene is empty"
+        assert len(response_json["ending_scene_heading"]) > 0, "Ending scene heading is empty"
+        assert len(response_json["ending_scene_description"]) > 0, "Ending scene description is empty"
         
         return True
     except AssertionError as e:
@@ -85,7 +88,8 @@ def test_generate_complete_story():
             logger.info(f"Initial Scene Heading Length: {len(response_json['initial_scene_heading'])} characters")
             logger.info(f"Initial Scene Description Length: {len(response_json['initial_scene_description'])} characters")
             logger.info(f"Main Body Segments: {len(response_json['main_body'])}")
-            logger.info(f"Ending Scene Length: {len(response_json['ending_scene'])} characters")
+            logger.info(f"Ending Scene Heading Length: {len(response_json['ending_scene_heading'])} characters")
+            logger.info(f"Ending Scene Description Length: {len(response_json['ending_scene_description'])} characters")
             
             # Log first few story parts
             logger.info("\n=== Story Parts Preview ===")

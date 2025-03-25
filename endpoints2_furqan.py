@@ -8,15 +8,18 @@ import json
 import random
 import re
 
+import os
+from datetime import datetime
+from fastapi.middleware.cors import CORSMiddleware
+
 # Import our previously defined functions and model
-from ApitoFunc_christine_test import (
-    generate_Initialscene_heading,
+from ApitoFunc_christine_test_1 import (
+    generate_scene_heading,
     generate_initial_scene,
     generate_narrative,
     generate_dialogue,
     generate_ending_scene,
-    generate_character_name,
-    generate_scene_heading
+    generate_character_name
 )
 from label_prediction_model_new import LabelPredictionModel
 
@@ -47,7 +50,8 @@ class StoryOutputSchema(BaseModel):
     initial_scene_heading: str = Field(..., description="The initial scene heading text.")
     initial_scene_description: str = Field(..., description="The initial scene narrative text.")
     main_body: List[StoryPartSchema] = Field(..., description="List of story segments generated in the main body.")
-    ending_scene: str = Field(..., description="The ending scene text.")
+    ending_scene_heading: str = Field(..., description="The ending scene heading text.")
+    ending_scene_description: str = Field(..., description="The ending scene narrative text.")
 
 # -------------------------------------------------------------
 # 3. Initialize FastAPI
@@ -61,10 +65,18 @@ app = FastAPI(
     version="1.2.0",
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # -------------------------------------------------------------
 # 4. Load the Label Prediction Model
 # -------------------------------------------------------------
-model_path = "trained_roberta_dialogue_model_new"
+model_path = "trained_roberta_dialogue_model_new_large"
 label_model = LabelPredictionModel(model_path)
 
 def unify_label(predicted_label: str) -> str:
@@ -140,19 +152,17 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
     # 5.1 Generate the Initial Scene Heading
     # ---------------------------------------------------------
     init_heading_data = {
-        "setting": story_input.setting,
-        "characters": [
-            {"name": char.name, "trait": char.trait} for char in active_characters
-        ]
+        "instruction": "START",
+        "scene_details": f"{story_input.setting} featuring {active_characters[0].name} and {active_characters[1].name}"
     }
     
     initial_scene_heading_text = ""
-    for chunk in generate_Initialscene_heading(init_heading_data):
+    for chunk in generate_scene_heading(init_heading_data):
         if chunk.startswith("data:"):
             json_str = chunk[len("data:"):].strip()
             try:
                 msg_data = json.loads(json_str)
-                if msg_data.get("type") == "scene_heading_chunk":
+                if msg_data.get("type") == "scene_heading":
                     initial_scene_heading_text += msg_data["data"]
                 elif msg_data.get("type") == "error":
                     initial_scene_heading_text += f"[ERROR] {msg_data['data']}"
@@ -194,7 +204,7 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
     dialogue_count = 0
     max_dialogues_before_swap = 4  # Swap after 4-5 dialogues
 
-    for _ in range(3):
+    for _ in range(20):
         # Predict the label based on the last generated text
         if main_body:
             last_part = main_body[-1]
@@ -202,6 +212,8 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
         else:
             input_text = current_script
 
+        print("LABEL MODEL CALL")
+        print(input_text)
         predicted_label_raw = label_model.predict_label(input_text)
         unified_label = unify_label(predicted_label_raw)
 
@@ -268,6 +280,7 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
         elif unified_label == "Scene_Heading":
             # Generate a scene heading
             scene_heading_input = {
+                "instruction": "BODY",
                 "scene_details": "a new scene location and time"
             }
             scene_heading_text = ""
@@ -308,24 +321,47 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
             main_body.append({"label": "Narrative", "text": narrative_text})
             current_script += "\n" + narrative_text
 
+        # ---------------------------------------------------------
+    # 5.4 Generate the Ending Scene Heading and Description
     # ---------------------------------------------------------
-    # 5.4 Generate the Ending Scene
-    # ---------------------------------------------------------
+    # First generate the ending scene heading
+    ending_heading_data = {
+        "instruction": "END",
+        "scene_details": "final scene location and time"
+    }
+    
+    ending_scene_heading_text = ""
+    for chunk in generate_scene_heading(ending_heading_data):
+        if chunk.startswith("data:"):
+            json_str = chunk[len("data:"):].strip()
+            try:
+                msg_data = json.loads(json_str)
+                if msg_data.get("type") == "scene_heading":
+                    ending_scene_heading_text += msg_data["data"]
+                elif msg_data.get("type") == "error":
+                    ending_scene_heading_text += f"[ERROR] {msg_data['data']}"
+            except Exception as e:
+                logger.error(f"Error parsing ending scene heading chunk: {e}")
+    
+    # Add the ending scene heading to the current script
+    current_script += "\n" + ending_scene_heading_text
+    
+    # Then generate the ending scene description
     ending_data = {
         "current_script": current_script,
         "ending_description": "Craft a compelling final scene that ties everything together."
     }
 
-    ending_scene_text = ""
+    ending_scene_description_text = ""
     for chunk in generate_ending_scene(ending_data):
         if chunk.startswith("data:"):
             json_str = chunk[len("data:"):].strip()
             try:
                 msg_data = json.loads(json_str)
                 if msg_data.get("type") == "ending_scene_chunk":
-                    ending_scene_text += msg_data["data"]
+                    ending_scene_description_text += msg_data["data"]
                 elif msg_data.get("type") == "error":
-                    ending_scene_text += f"[ERROR] {msg_data['data']}"
+                    ending_scene_description_text += f"[ERROR] {msg_data['data']}"
             except Exception as e:
                 logger.error(f"Error parsing ending scene chunk: {e}")
 
@@ -339,8 +375,16 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
         initial_scene_heading=initial_scene_heading_text,
         initial_scene_description=initial_scene_description_text,
         main_body=main_body_output,
-        ending_scene=ending_scene_text
+        ending_scene_heading=ending_scene_heading_text,
+        ending_scene_description=ending_scene_description_text
     )
+
+    # Save the API call before returning
+    save_api_call(
+        input_data=story_input.dict(),
+        output_data=result.dict()
+    )
+    
     return result
 
 # -------------------------------------------------------------
@@ -383,9 +427,28 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
        {"label": "Dialogue", "text": "..."},
        ...
      ],
-     "ending_scene": "..."
+     "ending_scene_heading": "...",
+     "ending_scene_description": "..."
    }
 """
+
+# Add this right before the main endpoint function
+def save_api_call(input_data: dict, output_data: dict):
+    # Create runs directory if it doesn't exist
+    os.makedirs("runs", exist_ok=True)
+    
+    # Generate timestamped filename
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"runs/api_call_{timestamp}.txt"
+    
+    # Write input and output to file
+    with open(filename, "w") as f:
+        f.write("=== INPUT ===\n")
+        f.write(json.dumps(input_data, indent=2))
+        f.write("\n\n=== OUTPUT ===\n")
+        f.write(json.dumps(output_data, indent=2))
+    
+    logger.info(f"Saved API call to {filename}")
 
 # This allows the script to be run directly if needed
 if __name__ == "__main__":
