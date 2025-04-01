@@ -1,0 +1,116 @@
+=== INPUT ===
+{
+  "setting": "a haunted castle on a dark night. There were 2 friends. Alice and Alex.",
+  "characters": [
+    {
+      "name": "Alice",
+      "trait": "a curious traveler"
+    },
+    {
+      "name": "Marcus",
+      "trait": "a stoic guardian"
+    },
+    {
+      "name": "Eleanor",
+      "trait": "a ghostly noblewoman"
+    },
+    {
+      "name": "Victor",
+      "trait": "a mad scientist"
+    },
+    {
+      "name": "Finn",
+      "trait": "a lost child seeking answers"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "EXT. HAUNTED CASTLE - NIGHT",
+  "initial_scene_description": "Darkness shrouds the crumbling castle's turrets. Shadows writhe across moss-covered stone walls like living things. Alice and Alex, two friends with lanterns, creep cautiously through the musty halls.\n\nIn the distance, a faint creaking echoes, as if wooden floorboards groan under unseen feet. Suddenly, Finn emerges from the gloom, his eyes glowing like embers in the dark. Victor looms behind him, his massive frame casting an ominous silhouette.\n\nThe air thickens with foreboding as Alice and Alex halt, their lanterns trembling.",
+  "main_body": [
+    {
+      "label": "Narrative",
+      "text": "Finn's eyes pulse with an otherworldly energy as he steps closer to Alice and Alex, his presence drawing the shadows tighter around them. Victor's massive frame remains still, its bulk looming like a specter."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Mother... was it here?\""
+    },
+    {
+      "label": "Character_Name",
+      "text": "Victor"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Silence, Finn. The echoes of her presence still linger.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Victor's massive form shudders, as if the words have awakened a dormant memory. His eyes flicker with a mixture of sorrow and warning.\n\nFinn's face contorts in anguish, his voice cracking under the weight of unspoken emotions. He takes a step forward, his eyes locked on Victor's imposing frame.\n\nAlice and Alex exchange a fearful glance, their lanterns casting eerie shadows on the walls as they inch closer to Finn, uncertain how to intervene.\n\nVictor's massive hand rises, palm up, as if urging caution."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Where is she? I can feel her here... but where?\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Finn's eyes blaze with intensity as he scans the dark recesses of the castle, his presence drawing the shadows into an unsettling dance. Victor's massive form shifts, its bulk undulating like a living entity.\n\nA faint whisper seems to caress the air, a soft susurration that sends shivers through Alice and Alex. They exchange a terrified glance, their lanterns trembling in unison.\n\nAs one, they inch closer to Finn, their footsteps echoing off the stone walls. Victor's massive hand lowers, its palm still outstretched in a gesture of caution.\n\nThe air thickens with an otherworldly presence, as if the castle itself is stirring from a deep slumber. The creaking floorboards grow louder, a cacophony that threatens to engulf them all."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Victor"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Finn, listen... her echoes whisper secrets of darkness.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "The darkness seems to coalesce into tendrils of mist that writhe across the stone walls. Finn's eyes burn with an otherworldly intensity as he strains to hear the whispers. Victor's massive form looms, its bulk undulating like a living entity.\n\nFinn's gaze darts around the musty halls, his footsteps echoing off the walls as he moves closer to the source of the whispers. The creaking floorboards grow louder, a cacophony that threatens to engulf them all.\n\nAlice and Alex exchange a terrified glance, their lanterns trembling in unison. They inch closer to Finn, their footsteps barely audible over the growing din.\n\nThe air thickens with an otherworldly presence, as if the castle itself is stirring from a deep slumber."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"I'll find her, no matter what darkness whispers back.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Finn's eyes blaze as he strides down the musty corridor, Victor's massive form looming behind him. Shadows writhe across the walls like living things, and the creaking floorboards grow louder, a cacophony that threatens to engulf them all.\n\nAlice and Alex exchange a terrified glance, their lanterns trembling in unison as they follow Finn into the darkness. The air thickens with an otherworldly presence, and the whispers seem to grow louder, a maddening susurration that sends shivers through their spines."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Eleanor"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Wait, Finn... don't go in there alone...\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Finn's footsteps echo down the corridor as Victor's massive form looms behind him, shadows dancing across the walls like living things.\n\nAlice and Alex exchange a terrified glance, their lanterns trembling in unison as they inch closer to Finn, unsure how to intervene.\n\nEleanor appears from the darkness, her voice low and urgent, as she reaches out to grasp Finn's arm."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Let me go, Eleanor... I have to find her.\""
+    }
+  ],
+  "ending_scene_heading": "EXT. ABANDONED BEACH - DAWN",
+  "ending_scene_description": "Finn's footsteps echo back, but he's not alone. Shadows writhe across the walls as Eleanor's form merges with his, their silhouettes becoming one. The whispers cease, and an unearthly silence falls over the castle.\n\nThe camera pans out, revealing the musty halls empty once more. The creaking floorboards grow still, and the darkness recedes like a retreating tide.\n\nAlice and Alex stand frozen, lanterns trembling in their hands. Victor's massive form looms behind them, his eyes flickering with a hint of sorrow.\n\nAs the sun rises over the abandoned beach, a lone figure stands at the water's edge, Finn and Eleanor's merged form gazing out to sea."
+}

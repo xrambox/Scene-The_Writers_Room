@@ -1,0 +1,192 @@
+=== INPUT ===
+{
+  "setting": "An abandoned prison in Germany being renovated by a young Iranian couple's building repair company.",
+  "characters": [
+    {
+      "name": "Aida",
+      "trait": "hardworking, determined, emotional"
+    },
+    {
+      "name": "Saman",
+      "trait": "kind, humorous, hardworking, rational"
+    },
+    {
+      "name": "Ahmad",
+      "trait": "calm, introverted, compassionate, 60 years old"
+    },
+    {
+      "name": "Producer",
+      "trait": "strong communication skills, logical, composed, 66 years old"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "EXT. ABANDONED PRISON \"WALLAU\" - RENOVATION SITE - DAY",
+  "initial_scene_description": "Abandoned Zwickau Prison, Germany. Rain-soaked courtyard, crumbling walls. Workers' chatter echoes through the silence.\n\nAhmad, a young Iranian man with a worn denim jacket, surveys the site with his wife, Leila. Her dark hair is tied back, revealing a smudge of mortar on her cheek.\n\nThe camera pans across the ruin, capturing the remnants of once-cold cells and rusting bars. Leila's hand brushes against Ahmad's as they walk towards the main entrance.\n\nA flickering work light casts long shadows, illuminating the couple's determined expressions.",
+  "main_body": [
+    {
+      "label": "Narrative",
+      "text": "Rainwater drips from Leila's hair as she inspects the crumbling wall. Ahmad's eyes narrow, assessing the structural integrity. He reaches for a worn notebook, jotting down notes. The work light above flickers, casting eerie shadows on the walls."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Alright, let's get the scaffolding set up around this section, we need to shore it up before we can start demo.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rain-soaked scaffolding stretches towards the crumbling wall as workers secure loose boards. Leila's eyes follow the structural cracks, her brow furrowed in concern. Ahmad consults his notebook, calculating loads and stresses. His hand brushes against hers, a reassuring touch amidst the chaos."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, I don't like this section. We need to re-route the scaffolding, it's not stable.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Leila's eyes dart to Ahmad's face, her dark hair whipped back by the wind as she scrutinizes his assessment. A rivulet of rainwater trickles down the worn brick wall, pooling at their feet.\n\nThe scaffolding creaks ominously, straining against the weight of the crumbling masonry. Rain-soaked boards groan beneath the workers' footsteps as they reposition the shoring timbers. Leila's hand tightens around her gloved fist, knuckles white with tension."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Let's hold off on demo until we're sure this section can handle the weight of its own debris.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As rain drums against the scaffolding, Leila's eyes lock onto a glint of metal peeking from beneath a pile of rubble. She kneels beside it, her gloved hands brushing away debris as Ahmad watches with interest. A rusted iron key clinks against stone, releasing dust motes that dance in the work light's flicker."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, what is that?\""
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Let's get some air on it, see if we can ID the lock it fits.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater continues to seep from the walls as Leila gently brushes away more debris, exposing the rusty key's worn teeth. Ahmad crouches beside her, eyes fixed on the glinting metal."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Ahmad, look at this... what if it's from one of the old cells?\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater drips from Leila's hair as she brushes away dust motes dancing in the work light's flicker. The rusted iron key glints, its worn teeth exposed amidst crumbling mortar. Ahmad's eyes narrow, scrutinizing the lock it might fit."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Alright, let's take a closer look at this key. Maybe we can find its corresponding lock and uncover some of Wallau's secrets.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater glistens on the rusty key as Leila carefully brushes away dust motes dancing in the work light's flicker. Ahmad crouches beside her, eyes fixed on the glinting metal.\n\nThe camera pans to a nearby storage room, where workers rummage through dusty crates and boxes, searching for matching locks. Shadows cast by old machinery loom large on the walls as they dig through forgotten relics.\n\nIn the courtyard, a team of experts in forensic engineering examines the key under a specialized microscope, their faces bathed in soft blue light."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, this could be the break we've been looking for.\""
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Alright, let's get it to the lab and see if they can crack the lock. We might be looking at decades-old secrets hidden behind those rusted bars.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater drips from Leila's hair as she stands before the storage room's dusty shelves. Ahmad's eyes scan the stacks of crates, his fingers tracing the etched metal labels. Crates creak beneath their weight, releasing wispy tendrils of dust into the air.\n\nLeila's hand brushes against a stack of old files, worn cardboard edges flaking apart. The rusted iron key glints on her gloved palm as she turns it over, studying its worn teeth.\n\nAhmad's eyes lock onto a nearby crate, its lid creaking open with a groan. A faint scent of mildew wafts out, carrying whispers of the past. Old photographs tumble forth, their faded colors blending with the dust motes dancing in the work light's flicker.\n\nA worker's gloved hand reaches for the photos, fingers gentle as they separate the brittle images."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, look at this...a photograph of a young woman from the 1930s. I think she was a prisoner here.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As Leila's eyes scan the stack of old files, her gloved hand brushes against a worn cardboard edge. The rusted iron key glints on her palm as she turns it over. Ahmads eyes lock onto a nearby crate, its lid creaking open with a groan.\n\nA faint scent of mildew wafts out, carrying whispers of the past. Dust motes dance in the work light's flicker as old photographs tumble forth. A worker's gloved hand reaches for the photos, fingers gentle as they separate the brittle images.\n\nThe camera pans across the stack of photographs, capturing faded colors and worn edges. A young woman's face appears on one image, her dark hair styled in a neat bob."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Alright, let's get the forensics team to work on this lock and those files. We might be uncovering more than just a renovation project here.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As Leila delves into the worn cardboard files, dust motes dance in the work light's flicker, illuminating the faded photographs scattered on the storage room shelf. Ahmad's eyes narrow, scrutinizing a 1930s-era image of a young woman with dark hair styled in a neat bob."
+    },
+    {
+      "label": "Narrative",
+      "text": "The forensics team huddles around the microscope, their faces bathed in soft blue light as they examine the rusty key's intricate mechanisms. Fingers move deftly, tracing the worn teeth and ridges. The camera zooms in on a single particle of debris clinging to the lock's surface."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, I think I see something...the key might fit an old cell door lock.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater drips from Leila's hair as she carefully sorts through the worn cardboard files, their edges flaking apart amidst dust motes dancing in the work light's flicker. Ahmad's eyes scan the stack of old photographs, his fingers tracing the etched metal labels on nearby crates. A faint scent of mildew wafts out, carrying whispers of the past as workers gently separate the brittle images.\n\nA young woman's face appears on one faded photograph, her dark hair styled in a neat bob amidst 1930s-era fashion. Dust motes cling to the worn edges, suspended in the air like tiny specters. Ahmad's eyes narrow, scrutinizing the image as Leila delves deeper into the files, her gloved hand brushing against a torn page.\n\nThe camera pans across the stack of photographs, capturing faded colors and worn edges. Shadows cast by old machinery loom large on the walls as workers dig through forgotten relics in the storage room's dusty recesses."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater drips from Leila's hair as she carefully sorts through the worn cardboard files. Ahmad's eyes scan the stack of old photographs, his fingers tracing the etched metal labels on nearby crates. A faint scent of mildew wafts out, carrying whispers of the past.\n\nA worker's gloved hand reaches for a dusty crate in the storage room. The lid creaks open with a groan, releasing wispy tendrils of dust into the air. Old photographs tumble forth, their faded colors blending with the dust motes dancing in the work light's flicker."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Beit, this could be it...the key might fit a cell door from the old wing.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As Leila delicately sorts through the worn cardboard files, dust motes dance in the work light's flicker, illuminating the faded photographs scattered on the storage room shelf. Ahmad's eyes narrow, scrutinizing a 1930s-era image of a young woman with dark hair styled in a neat bob.\n\nRainwater drips from Leila's hair as she carefully brushes away dust particles clinging to the worn cardboard edges. The camera pans across the stack of old photographs, capturing faded colors and worn edges.\n\nA faint scent of mildew wafts out, carrying whispers of the past as workers gently separate the brittle images. Ahmad's eyes lock onto a nearby crate, its lid creaking open with a groan."
+    }
+  ],
+  "ending_scene_heading": "INT. ABANDONED WINDMILL - DAWN",
+  "ending_scene_description": "As the work light fades, Leila's eyes lock onto Ahmad's, their faces illuminated by the faint glow of the abandoned windmill's windows. The rusty key glints on her gloved palm as they step into the dawn's silence. Outside, the renovation site lies still, shrouded in mist and secrecy."
+}

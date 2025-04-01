@@ -1,0 +1,192 @@
+=== INPUT ===
+{
+  "setting": "An abandoned prison in Germany being renovated by a young Iranian couple's building repair company.",
+  "characters": [
+    {
+      "name": "Aida",
+      "trait": "hardworking, determined, emotional"
+    },
+    {
+      "name": "Saman",
+      "trait": "kind, humorous, hardworking, rational"
+    },
+    {
+      "name": "Ahmad",
+      "trait": "calm, introverted, compassionate, 60 years old"
+    },
+    {
+      "name": "Producer",
+      "trait": "strong communication skills, logical, composed, 66 years old"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "EXT. ABANDONED PRISON - RAINY DAY",
+  "initial_scene_description": "The crumbling walls of Stalag IXA prison loomed like skeletal fingers over the deserted German landscape. Ahmad and Aida, hand in hand, walked through the dusty courtyard, their footsteps echoing off the cold stone.\n\nAhmad, a young Iranian engineer with a kind face, surveyed the dilapidated buildings as he led Aida to the central hub of the complex. His dark hair was flecked with dust from the renovation site.\n\nAida's bright smile faltered for a moment as she took in the bleak surroundings, her eyes lingering on the rusting barbed wire that once held prisoners captive. Her long brown hair whipped about her face as a gust of wind swept through.\n\nTogether, they approached a makeshift office trailer, a symbol of hope amidst the decay.",
+  "main_body": [
+    {
+      "label": "Narrative",
+      "text": "Ahmad's eyes locked onto Aida's as he pushed open the creaky trailer door, revealing a cramped space filled with dusty blueprints and scattered tools.\n\nRain-soaked papers clung to the clipboard on his desk, weighed down by a rusted screwdriver. The scent of mildew wafted through the air as Ahmad gestured for Aida to enter.\n\nShe slipped inside, her eyes adjusting to the dim light within. The trailer's metal walls seemed to close in around them, muffling the outside sounds of rain and wind."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Welcome to our little oasis, Aida. Let's get out of this downpour.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Aida's gaze roamed the cramped space, taking in the eclectic mix of modern tools and vintage machinery. The scent of fresh coffee wafted from a thermos on Ahmad's desk, its metallic exterior gleaming in the dim light. The air was heavy with the weight of their mission: to transform this abandoned prison into a thriving hub for refugees fleeing war-torn regions."
+    },
+    {
+      "label": "Narrative",
+      "text": "Aida's fingers trailed over the vintage lathe, its worn wooden surface a testament to generations of skilled craftsmen who once called this prison home. Rainwater dripped from the trailer's rusty roof, echoing off the metal walls as Ahmad carefully unfolded a large blueprint, revealing a meticulous plan for the transformation.\n\nThe coffee thermos still steamed on his desk, casting a warm glow over the cramped space. Aida's gaze lingered on the scattered tools, each one telling a story of its own: a rusty pipe wrench, a tattered tape measure, a set of worn gloves."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Ahmad, this is...it's beautiful,\" Aida's voice caught as she gazed at the blueprint, her eyes welling up with emotion."
+    },
+    {
+      "label": "Narrative",
+      "text": "The rain intensified outside, casting rhythmic shadows on the trailer's walls as Ahmad began to explain his plan. His eyes sparkled with enthusiasm as he pointed to various sections of the blueprint.\n\nAida's gaze followed the curve of his finger, taking in the intricate details of the renovation. Her fingers lingered on the vintage lathe's worn surface, a small smile playing on her lips."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Let me show you where we'll build the community kitchen,\" Ahmad's eyes lit up as he pointed to a section of the blueprint, his voice filled with excitement and pride."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the trailer's rusty roof, echoing off the metal walls as Ahmad carefully refolded the large blueprint. His eyes lingered on Aida, her gaze still fixed on the vintage lathe's worn surface. The scent of fresh coffee wafted through the air, mingling with the musty smell of old machinery.\n\nAida's fingers trailed over the tattered tape measure, its yellowed edge creased from years of use. She straightened up, her eyes locking onto Ahmad's as he gestured for her to follow him outside. The rain-soaked courtyard beckoned, its deserted expanse a canvas waiting for their brushstrokes of transformation.\n\nAhmad pushed open the trailer door, allowing a gust of wind to sweep in, carrying with it the whispers of the past. He stepped out into the downpour, his eyes scanning the courtyard as he waited for Aida to join him."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"I'll never forget where I came from, Ahmad. This prison holds so many stories.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rain-soaked fingers grasped the rusty door handle as Ahmad pushed it open, inviting Aida into the downpour. A gust of wind swept through, carrying the whispers of the past, its damp breath misting over Aida's face. She shivered, her dark hair clinging to her skin like wet threads.\n\nThe rain pattered against their faces, a staccato beat that seemed to echo the pounding of their hearts. Ahmad's eyes locked onto hers as he gestured for her to follow him across the deserted courtyard."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"We'll fill these walls with laughter and hope, Aida.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from Ahmad's jacket as he led Aida through the deserted courtyard, their footsteps echoing off the crumbling walls. The wind whipped Aida's hair into a frenzy, but she didn't pull away from Ahmad's gaze. His eyes locked onto hers, shining with determination as they approached the old gymnasium.\n\nInside, the musty air clung to their skin like a damp shroud. The remnants of a long-abandoned basketball court stretched out before them, its wooden floor worn smooth by years of neglect. Aida's fingers trailed over the rusting hoops, her touch gentle as she explored the space.\n\nAhmad pushed open a creaky door, revealing a storage room filled with dusty equipment and stacks of yellowed boxes. He gestured for Aida to enter, his eyes scanning the shelves as he searched for something."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Shh, let me find what we need,\" Ahmad whispered, his eyes scanning the shelves as rainwater dripped from the storage room's rusty ceiling."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the rusty storage room ceiling as Ahmad's fingers brushed against old textbooks, their worn covers whispering secrets of the past. Dust motes danced in the dim light, carried by the faint scent of aged paper and forgotten knowledge. Aida's footsteps echoed off the shelves as she moved closer to Ahmad, her eyes scanning the stacks of yellowed boxes."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Shh, let me find what we need,\" I whispered, my eyes scanning the shelves as rainwater dripped from the storage room's rusty ceiling."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the rusty storage room ceiling as Ahmad's fingers brushed against old textbooks. Dust motes danced in the dim light, carried by the faint scent of aged paper and forgotten knowledge.\n\nAida's footsteps echoed off the shelves as she moved closer to Ahmad, her eyes scanning the stacks of yellowed boxes. The musty air clung to their skin like a damp shroud.\n\nAhmad carefully lifted an old toolbox from the shelf, its worn metal exterior creaking in protest. He opened it with a rusty hinge, revealing a collection of vintage tools and scattered screws.\n\nAida's eyes widened as she took in the contents of the toolbox, her gaze lingering on a beautifully crafted wooden plane."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Look at this beauty, Aida! A vintage wood plane, perfect for our community workshop.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Aida's fingers danced over the plane's intricate curves as Ahmad handed it to her, its worn wood fitting neatly into her palm.\n\nRainwater dripped from the rusty storage room ceiling as Ahmad carefully lifted a tattered blueprint from a stack of yellowed boxes, his eyes scanning the faded lines and scribbled notes."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"This old plane is a treasure, Ahmad. It's like it's been waiting for us.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the rusty storage room ceiling as Ahmad's fingers brushed against old textbooks. Dust motes danced in the dim light, carried by the faint scent of aged paper and forgotten knowledge. Aida's footsteps echoed off the shelves as she moved closer to Ahmad.\n\nAhmad carefully lifted an old toolbox from the shelf, its worn metal exterior creaking in protest."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Ah, yes...this plane's stories will flow like the rain outside.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As Ahmad's fingers danced across the vintage wood plane's intricate curves, Aida's eyes locked onto his, a spark of excitement igniting within them. The dim light of the storage room danced across their faces, casting shadows that seemed to emphasize the anticipation building between them.\n\nThe rain pattered against the rusty ceiling above, its rhythmic beat synchronizing with the thud of Ahmad's footsteps as he moved closer to Aida. His dark hair was flecked with dust from the renovation site, and his eyes shone like polished onyx in the dim light.\n\nAida's fingers wrapped around the wooden plane's worn handle, her touch gentle yet resolute. The air thickened with unspoken understanding as Ahmad's hand brushed against hers, sending a jolt of electricity through their entwined fingers.\n\nThe storage room's musty scent wafted around them, heavy with the weight of forgotten memories and abandoned dreams. Yet, amidst this atmosphere of neglect, a sense of hope began to unfurl, its tender shoots piercing the shadows like tender green leaves pushing through cracked concrete."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"I feel it too, Ahmad...a chance for redemption.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the rusty ceiling as Ahmad's fingers brushed against Aida's, sending a spark of electricity through their entwined hands. The dim light danced across their faces, casting shadows that emphasized the anticipation building between them. \n\nAida's eyes locked onto Ahmad's, her gaze burning with an unspoken understanding. Her fingers wrapped around the wooden plane's worn handle, her touch gentle yet resolute."
+    },
+    {
+      "label": "Narrative",
+      "text": "Ahmad's hand closed around Aida's fingers, their entwined hands steady amidst the storage room's musty air. The wooden plane's worn handle creaked as Aida's grip tightened. Rainwater dripped from the rusty ceiling above, a rhythmic accompaniment to the silence between them. Dust motes danced in the dim light, carried by the faint scent of aged paper and forgotten knowledge."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater dripped from the rusty storage room ceiling as Ahmad's fingers brushed against Aida's, sending a spark of electricity through their entwined hands. Dust motes danced in the dim light, carried by the faint scent of aged paper and forgotten knowledge. Aida's eyes locked onto Ahmad's, her gaze burning with an unspoken understanding."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Shh, listen...the rain is rewriting this place's story.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As they stepped out of the storage room, the rain-soaked courtyard stretched before them like a canvas waiting for their brushstrokes of transformation. Aida's eyes sparkled with excitement as she gazed up at Ahmad, her dark hair clinging to her skin like wet threads.\n\nThe wooden plane's worn handle still clutched in her hand, she began to walk towards the old gymnasium, its rusting hoops a testament to generations of athletes who once called this place home. Ahmad followed closely behind, his eyes scanning the surrounding walls as he took in the intricate details of the renovation plan.\n\nRainwater dripped from the rusty eaves above, echoing off the crumbling stone as they approached the entrance. Aida pushed open the creaky door, revealing a cavernous space filled with dust motes dancing in the dim light.\n\nThe musty air clung to their skin like a damp shroud, but Ahmad's eyes sparkled with excitement as he took in the scope of the gymnasium. His fingers brushed against Aida's hand, sending a jolt of electricity through their entwined hands.\n\nAida's gaze roamed the space, taking in the remnants of a long-abandoned basketball court. The wooden floor creaked beneath her feet as she walked towards the center of the room, the rain-soaked air carrying the scent of aged wood and forgotten dreams.\n\nAhmad's hand closed around hers, his fingers intertwining with hers as they stood at the heart of the gymnasium. The sound of raindrops hitting the rusty roof above created a soothing melody, one that seemed to underscore their shared vision for this abandoned prison."
+    }
+  ],
+  "ending_scene_heading": "EXT. ABANDONED BEACH - DAWN",
+  "ending_scene_description": "As dawn breaks, Ahmad and Aida stand on the abandoned beach, hands still intertwined. The sea glistens with morning dew, reflecting their hopes for a brighter future."
+}

@@ -129,8 +129,8 @@ def generate_complete_story(story_input: StoryInputSchema) -> StoryOutputSchema:
         # Combine all name chunks into a single string
         character_names = "".join(character_names_chunks).strip()
 
-        # Split names by both commas and newlines
-        character_names_list = [name.strip() for name in re.split(r"[\n,]", character_names) if name.strip()]
+        # Split names by both commas and newlines and title-case them
+        character_names_list = [name.strip().title() for name in re.split(r"[\n,]", character_names) if name.strip()]
 
         # Debugging output
         logger.info(f"Final character names: {character_names_list}")

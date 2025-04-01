@@ -1,0 +1,192 @@
+=== INPUT ===
+{
+  "setting": "An abandoned prison in Germany being renovated by a young Iranian couple's building repair company.",
+  "characters": [
+    {
+      "name": "Aida",
+      "trait": "hardworking, determined, emotional"
+    },
+    {
+      "name": "Saman",
+      "trait": "kind, humorous, hardworking, rational"
+    },
+    {
+      "name": "Ahmad",
+      "trait": "calm, introverted, compassionate, 60 years old"
+    },
+    {
+      "name": "Producer",
+      "trait": "strong communication skills, logical, composed, 66 years old"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "[ERROR] An error occurred while generating the scene heading.",
+  "initial_scene_description": "[ERROR] An error occurred while generating the initial scene.",
+  "main_body": [
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Producer"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Ahmad"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Aida"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Saman"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    }
+  ],
+  "ending_scene_heading": "[ERROR] An error occurred while generating the scene heading.",
+  "ending_scene_description": "[ERROR] An error occurred while generating the ending scene."
+}

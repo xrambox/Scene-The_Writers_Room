@@ -1,0 +1,116 @@
+=== INPUT ===
+{
+  "setting": "a haunted castle on a dark night. There were 2 friends. Alice and Alex.",
+  "characters": [
+    {
+      "name": "Alice",
+      "trait": "a curious traveler"
+    },
+    {
+      "name": "Marcus",
+      "trait": "a stoic guardian"
+    },
+    {
+      "name": "Eleanor",
+      "trait": "a ghostly noblewoman"
+    },
+    {
+      "name": "Victor",
+      "trait": "a mad scientist"
+    },
+    {
+      "name": "Finn",
+      "trait": "a lost child seeking answers"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "[ERROR] An error occurred while generating the scene heading.",
+  "initial_scene_description": "[ERROR] An error occurred while generating the initial scene.",
+  "main_body": [
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Marcus"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "[ERROR] An error occurred while generating the scene."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "[ERROR] An error occurred while generating dialogue."
+    },
+    {
+      "label": "Narrative",
+      "text": "As night descends upon the desolate cityscape, flickering streetlights cast eerie shadows on crumbling skyscrapers. Amidst the ruins, a lone figure emerges from the darkness. Dressed in tattered attire, their face is obscured by a hood, casting an air of mystery. They move with purpose, boots echoing off concrete as they navigate through alleys and side streets."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rain pours down like a dark curtain, shrouding the city's decay. The lone figure ducks into a dilapidated convenience store, seeking refuge from the deluge. Flickering fluorescent lights above the counter cast an otherworldly glow on dusty shelves and expired products. The air is heavy with the stench of rotting food."
+    },
+    {
+      "label": "Narrative",
+      "text": "Rainwater pours onto the cracked floor as the lone figure moves swiftly behind the counter, eyes scanning for shelter from the storm. Flickering lights above cast eerie silhouettes on walls, while expired snacks line shelves like skeletal fingers. A faint hum emanates from a decrepit refrigerator, its doors hanging off hinges like a wounded beast."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Marcus"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"The rain won't wash away what's already rotten.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Rustling sounds emanate from the back of the convenience store as the lone figure searches for shelter. They duck behind a stack of decrepit crates, water-soaked boxes spilling their contents onto the cracked floor. Flickering lights above cast an unsettling glow on the scene.\n\nThe lone figure moves swiftly, peeling off their soaked jacket to reveal tattered clothing beneath. Their face remains obscured by the hood as they scan the surroundings with a mix of desperation and caution."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Is there... shelter?\" I whisper, my voice barely audible over the sound of rain pounding against the convenience store's walls."
+    },
+    {
+      "label": "Narrative",
+      "text": "Through the dusty window, rivulets of rainwater cascade down like molten silver, illuminating trash-strewn alleys. The lone figure's gaze lingers on a nearby dumpster, its mangled lid askew as if beckoning entry."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Eleanor"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Shelter's scarce, child,\" I whisper, my ethereal voice barely audible over the storm's din, \"but this place has secrets... hidden behind the rot.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Flickering fluorescent lights above the convenience store's counter cast an otherworldly glow as the lone figure moves swiftly behind the shelves, water-soaked boxes spilling their contents onto the cracked floor. They duck between rows of expired snacks, skeletal fingers reaching out like grasping hands.\n\nA faint hum emanates from a decrepit refrigerator, its doors hanging off hinges like a wounded beast. The air is heavy with the stench of rotting food as the lone figure searches for shelter from the storm."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Finn"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Water's rising, I need to find higher ground.\""
+    }
+  ],
+  "ending_scene_heading": "EXT. BEACH AT SUNSET - TWILIGHT",
+  "ending_scene_description": "As the storm subsides, Finn stands atop the beach at twilight, gazing out at the horizon where sea meets sky. The once-lost city lies shrouded in darkness below, its secrets forever hidden behind the ruins. The wind whispers through the waves as the tide rises, washing away the remnants of a world left to decay."
+}

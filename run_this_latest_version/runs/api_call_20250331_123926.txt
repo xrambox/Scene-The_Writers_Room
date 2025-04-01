@@ -1,0 +1,132 @@
+=== INPUT ===
+{
+  "setting": "A refugee shelter in Germany during the Christmas holidays.",
+  "characters": [
+    {
+      "name": "Sahar",
+      "trait": "a determined Iranian artist seeking asylum"
+    },
+    {
+      "name": "A Muslim couple",
+      "trait": "residents who follow strict religious beliefs"
+    },
+    {
+      "name": "Esma",
+      "trait": "an elderly Arab woman"
+    },
+    {
+      "name": "Najib",
+      "trait": "a young Afghan teenager"
+    },
+    {
+      "name": "Shahla",
+      "trait": "a young Iranian woman"
+    },
+    {
+      "name": "Amir",
+      "trait": "a young Iranian man"
+    },
+    {
+      "name": "K\u00fcbra",
+      "trait": "a pregnant Turkish woman"
+    },
+    {
+      "name": "Emil",
+      "trait": "her supportive husband"
+    },
+    {
+      "name": "Danny",
+      "trait": "Sahar's beloved dog from Iran"
+    }
+  ]
+}
+
+=== OUTPUT ===
+{
+  "initial_scene_heading": "INT. REFUGEE SHELTER - CHristmas EVE NIGHT",
+  "initial_scene_description": "Snowflakes gently fall outside the makeshift walls of the refugee shelter in Berlin. Sahar, a young Muslim woman, sits alone on a cot, her eyes fixed on a small, worn-out Quran as she quietly prays. Her husband, Amir, enters with a steaming cup of coffee, his face weary from the day's struggles.\n\nA faint scent of cardamom and spices wafts through the air, mingling with the sterile smell of disinfectant and worn fabric. The shelter's makeshift Christmas decorations \u2013 a small tree made of twigs and some torn cloth garlands \u2013 seem out of place amidst the bleakness.\n\nAmir gently places the cup in front of Sahar, his eyes locking onto hers as he sits beside her. Their hands touch briefly, a fleeting spark of comfort in this desolate space.",
+  "main_body": [
+    {
+      "label": "Character_Name",
+      "text": "Sahar"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Kheili khoshbakhtam, Amir-jan. Tonight, even this small kindness feels like a miracle.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "Amir's eyes crinkle at the corners as he smiles, his gaze never leaving Sahar's face. He reaches for her hand, his fingers intertwining with hers in a gentle grasp.\n\nSahar's eyes flutter closed, a soft sigh escaping her lips as she leans into him. The warmth of Amir's hand seeps through her cold fingertips, and she feels the tension in her shoulders ease."
+    },
+    {
+      "label": "Character_Name",
+      "text": "A Muslim couple"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Khoshbakhti behtar az omadi, Sahar-jan.\" (Peace is better than this bitter life.)"
+    },
+    {
+      "label": "Narrative",
+      "text": "As the snowflakes continue to fall outside, Sahar's eyes remain closed, her face tilted towards Amir as she savors the warmth of his hand. The faint scent of cardamom lingers in the air, mingling with the distant hum of generators and muffled chatter from other refugees."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Sahar"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Khoda rooz beravinam, Amir-jan. In this cold, our hands are all we have left.\""
+    },
+    {
+      "label": "Narrative",
+      "text": "As Amir's fingers intertwine with Sahar's, the gentle pressure sparks a warmth that radiates through her body. The soft glow of a nearby LED light casts an ethereal sheen on their intertwined hands.\n\nAmir's eyes crinkle at the corners as he smiles, his gaze never leaving Sahar's face.\n\nThe sound of distant generators hums in the background, punctuated by muffled whispers and the occasional rustle of fabric.\n\nSahar's eyelids flutter closed, her face tilted towards Amir as she savors the warmth of his hand."
+    },
+    {
+      "label": "Character_Name",
+      "text": "A Muslim couple"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Khodahafez az cheshm-e omadi.\" (Farewell to the eyes of suffering.)"
+    },
+    {
+      "label": "Narrative",
+      "text": "Sahar's eyes remain closed as Amir strokes her hand with his thumb, his gaze drifting to the makeshift Christmas tree, its branches swaying softly in the draft from the shelter's doorway. \n\nThe sound of muffled carols drifts from outside, their melancholic melody a poignant counterpoint to the warmth emanating from Sahar and Amir's entwined hands.\n\nAmir's fingers tighten around Sahar's as he leans closer, his breath carrying the scent of cardamom and spices."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Sahar"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Sahar-jan, kheili cheshm-e khoshbakht hasti, even here, in this cold darkness.\" (Sahar, you have a beautiful heart, even here, in this cold darkness.)"
+    },
+    {
+      "label": "Character_Name",
+      "text": "Shahla"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Khoshbakhti rooze mabood, Amir-jan, khodahafez az oomadi.\" (Good peace to you, Amir, farewell to this bitterness.)"
+    },
+    {
+      "label": "Narrative",
+      "text": "Snowflakes settle on Sahar's dark hair as she opens her eyes, gazing up at Amir with a soft smile.\n\nAmir's fingers brush against her cheek, his thumb tracing the curve of her jaw.\n\nSahar's eyelids flutter closed, her face tilting towards Amir as he strokes her hand again.\n\nThe faint scent of cardamom wafts through the air, mingling with the sterile smell of disinfectant and worn fabric."
+    },
+    {
+      "label": "Character_Name",
+      "text": "Sahar"
+    },
+    {
+      "label": "Dialogue",
+      "text": "\"Khoshbakhti behtar az hameh khoshti, Amir-jan.\" (Peace is better than all this pain.)"
+    },
+    {
+      "label": "Narrative",
+      "text": "As snowflakes continue to fall outside, the shelter's generator hums louder, casting an eerie glow on the makeshift Christmas decorations. Sahar's eyes flutter open, her gaze drifting from Amir's face to the small tree, its branches swaying softly in the draft.\n\nAmir's fingers brush against her cheek once more, his thumb tracing the curve of her jaw. The warmth of his touch sends a shiver down her spine, and she leans into him, her body relaxing into his gentle grasp.\n\nThe scent of cardamom lingers in the air, mingling with the sterile smell of disinfectant and worn fabric."
+    }
+  ],
+  "ending_scene_heading": "EXT. ABANDONED BEACH AT SUNSET",
+  "ending_scene_description": "As the snow melts, Sahar and Amir step onto the abandoned beach at sunset, hand in hand. The sky is set ablaze with hues of pink and orange. They stand before a makeshift grave, adorned with a single rose. Sahar's eyes well up as she places a final kiss on Amir's forehead."
+}
